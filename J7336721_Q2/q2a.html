@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Walking Club Announcements</title>
+    
+    <meta name="Liran Sindel" content="J7336721">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="q2a.css">
+	
+  </head>
+  <body>
+
+
+
+
+
+<!--main area-->
+
+<header class="header">
+
+
+<!--page title-->
+<!-- set the title as The walking Club for admin page-->
+<div class="title_admin"><h1>The Walking Club</h1>
+
+</div>
+
+
+<!--dropdown menu-->
+<!-- create a dropdown menu for user and admin in a mobile layout) -->
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a  href="q2a.html"> Home</a>
+		<a  href="q2a.html"> Calendar</a>
+		<a  href="q2a.html"> Contact us</a>
+		<t> Admin menu-bar </t>
+		<a  href="q2a.html"> Membership Request</a>
+  	    <a  href="q2a.html"> Memberships</a>
+     	<a  href="q2a.html"> Create News Item</a>
+    	<a  href="q2a.html"> Create Announcements</a>
+	    <a  href="q2a.html"> Create New Event</a>
+    	<a  href="q2a.html"> Create New Walk Event</a>
+      </div>
+    </div> 
+
+
+<!--login or join the club-->
+
+
+<nav>
+<!-- creating a list -->
+<ul>
+
+<!-- creating a login item with a link -->
+<li><a href="q2a.html" class="login"> Logout</a></li>
+
+</ul>
+</nav>
+
+
+
+
+
+
+<!--navigation menu-->
+
+<!-- This is a navigation element inside the navigation for the admin page -->
+
+<nav class="navigation_admin_page">
+
+<!-- Create an Unordered List (ul) to display the various options on the navigation menu -->
+<ul>
+<!-- Create a List Item (li) to display the Home page on the navigation menu with 
+an anchor tag pointing to q2a.html and give it the navigation_title class -->
+<li><a href="q2a.html" class="navigation_title"> Home</a></li>
+<!-- Create a li that displays a separator  -->
+<li class="separator"> | </li>
+<!-- Create a li to display the Calendar page on the navigation menu with an anchor tag 
+pointing to q2a.html and give it the navigation_title class -->
+<li><a href="q2a.html" class="navigation_title"> Calendar</a></li>
+
+
+<li class="q2a.html"> | </li>
+
+<li><a href="q2a.html" class="navigation_title"> Contact us</a>
+
+
+</ul>
+
+
+</nav>
+
+</header>
+
+<!--admin navigation menu-->
+
+<!-- This div element contains a menu bar for an admin to access -->
+<div class="verticalmenu">
+    <!-- This title element contains the title of the menu bar -->
+    <t> Admin menu-bar </t>
+  	<a  href="q2a.html"> Membership Request</a>
+  	<s  href="q2a.html"> Memberships</s>
+  	<a  href="q2a.html"> Create News Item</a>
+  	<s  href="q2a.html"> Create Announcements</s>
+	<a  href="q2a.html"> Create New Event</a>
+	<s  href="q2a.html"> Create New Walk Event</s>
+</div>
+
+
+
+
+
+<!--Announcements-->
+
+
+
+
+
+
+
+      
+<!-- Start of form for sending an announcement in HTML-->
+<form class="announcements" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" enctype="multipart/form-data">
+
+<!--This code line is used to specify the session identifier-->
+<input type="hidden" name="SessionIdentifier" value="ee32-ff67-abcd1234-9090" />
+
+<!--This code creates a label for the "to" information-->
+<h2 class="announcements_label"> Add Announcement</h2>
+
+<p>
+  <label  class="announcements_label" for="to">Send To: </label>
+  <!--This code line is used to echo the announcement list -->
+  <input  class="announcements_input" type="text" name="to" id="to" value="<?php echo announcement_list  ?>" />
+</p>
+
+<!--This code creates a label for the "from" information-->
+<p>
+  <label  class="announcements_label" for="from">From:</label>
+  <!--This code line creates an input field for the "from" information-->
+  <input  class="announcements_input" type="text" name="from" id="from" placeholder="Sender name"/>
+</p>
+
+<!--This code creates a label for the "subject" information-->
+<p>
+  <label class="announcements_label" for="subject">Subject:</label>
+  <!--This code creates an input field for the "subject" information-->
+  <input class="announcements_input" type="text" name="subject" id="subject" placeholder="Subject line" />
+</p>
+
+<!--This code line creates a label for the "body" of the announcement-->
+<label class="announcements_label_message" for="body">Message: </label>
+
+<!--This code creates a textarea for the "body" of the announcement-->
+<textarea class="announcements_input_message" name="body" id="body" cols="80" rows="8" placeholder="Message of email..."></textarea>
+
+ <!-- start a paragraph with class announcements_label, where the user can add an attachment-->
+ <p class="announcements_label"> Add Attachment: 
+ <input class="announcements_attachment" type="file" name="attachment" /> 
+ </p>
+
+<!-- start a new paragraph and create a submit button labeled "submit" -->
+<p> 
+  <label class="announcements_label" for="schedule">Schedule Date/Time: </label>
+  <input class="announcements_label" type="date" name="schedule" id="schedule"/>
+  <input  class="announcements_label_submit" type="submit" value="submit" />
+</p>
+
+<!-- close the form -->
+</form>
+
+
+
+
+<!--footer-->
+
+<<footer> 
+  <!-- Start Footer div -->
+  <div class="footer"> 
+    <!-- Insert paragraph to clarify Copyrights and Privacy policies -->
+    <p class="footer_font_admin">Copyright, Privacy policy and other site details</p>
+  </div> 
+  <!-- End Footer div -->
+</footer> 
+
+
+  </body>
+</html>

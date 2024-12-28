@@ -1,0 +1,702 @@
+/* Set the margin and padding of the body equal to zero */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Set the font size, color, and family of the body to 14px, #333333, and Tahoma, Sans-serif respectively */
+body {
+	font-size: 14px;
+	color: #333333;
+	font-family: Tahoma, sans-serif;
+}
+
+/* Set the width of the body to 1024px and the background color to #b9ffb9 */
+body {
+	width: 1024px;
+	background-color: #b9ffb9;
+}
+
+
+/* -----------------------------body - mobile-----------------------------*/
+
+@media only screen and (max-width: 375px) {
+body{
+
+margin: 0px;
+
+    padding: 0px;
+
+    font-size: 14px;
+
+    color: #333333;
+
+    font-family: Tahoma, sans-serif;
+
+    width: 375px;
+
+    background-color: #b9ffb9;
+}
+}
+
+/* -----------------------------Header----------------------------- */
+
+/*Add a padding-top of 100px to the header*/
+.header{
+ padding-top: 100px;
+}
+
+/*Position the header element at the top of the page*/
+.header{
+ position: absolute; top: 0px;
+}
+
+/*Make the width of the header to be 100%*/
+.header{
+ width: 100%;
+}
+
+/*Set the height of the header to be 20px*/
+.header{
+ height: 20px;
+}
+
+/*Set the background of the header to the header.png image, and ensure the image always covers the header*/
+.header{
+ background-image: url(header.png);
+ background-size: cover;
+ background-position: center;
+}
+
+
+
+/* -----------------------------Header - title----------------------------- */
+
+.title {
+position: absolute;           // places font in an absolute position
+left: 20px; top: 5px;        // positioning of font on the page 
+font-size: 200%;             // font size
+line-height: 0;              // height of font
+font-family: 'Brush Script MT', cursive;    // select font
+color: white;                // color of font 
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;    // creates shadow of the font
+}
+
+/* -----------------------------Header - title - admin-----------------------------*/
+
+.title_admin {
+position: absolute; left: 170px; top: 5px; 
+font-size: 200%;
+line-height: 0;
+font-family: 'Brush Script MT', cursive;
+color: white;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* -----------------------------Mobile Layout----------------------------- */
+ 
+@media only screen and (max-width: 375px) {
+.header {
+
+padding-top: 80px;
+
+width: 110%;
+position: absolute; top: 0px; 
+
+background-image: url(header.png);
+background-size: cover;
+background-position: center; 
+}
+
+.title_admin {
+position: absolute; left: 3%; top: 25px; 
+font-size: 140%;
+}
+}
+
+/* -----------------------------Header - login-----------------------------*/
+
+.login {
+  /* black text color */ 
+  color: #000000;
+  /* position element in the top-right of the page */ 
+  position: absolute; 
+  right: 20px; 
+  top: 10px;
+  /* text size is 120% of normal */ 
+  font-size: 120%;
+  /* green background color */ 
+  background-color: #5ea35e;
+  /* white text color */ 
+  color: white;
+  /* 10px horizontal padding for click area */ 
+  padding: 10px 20px;
+  /* remove underline from link */ 
+  text-decoration: none;
+  /* add mouse cursor */ 
+  cursor: pointer;
+  /* round the corners of button */ 
+  border-radius: 25px;
+  /* solid 2px green border */ 
+  border: 2px solid #73AD21;
+}
+
+/* -----------------------------Header - login- mobile-----------------------------*/
+
+@media only screen and (max-width: 375px) {
+
+.login {
+
+color: #000000;
+  position: absolute; right: 50px; top: 105px; 
+  font-size: 30px;
+  background-color: #5ea35e;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+
+}
+
+/* -----------------------------Header - navigation----------------------------- */
+
+
+.navigation {
+
+
+/* add padding of zero to .navigation class */
+padding: 0px;
+
+/* set position attribute to absolute and set left and top parameters to 10px and 120px respectively */
+position: absolute; left: 10px; top: 120px;
+}
+
+
+
+/* Header - navigation - admin*/
+
+.navigation_admin_page {
+
+padding: 0px;
+
+position: absolute; left: 160px; top: 120px; 
+
+}
+
+/* Header - navigation font*/
+
+.navigation_title {
+
+color: #000000;
+/*sets the font size to 120 % of the original size*/
+font-size: 120%;
+
+
+}
+
+/* -----------------------------Header - navogation separator----------------------------- */
+
+.separator {
+
+/* Changes the color of the font to a green */
+color: #199319; 
+
+/* Changes the size of the font */
+font-size: 130%;
+
+}
+
+
+/* -----------------------------menu----------------------------- */
+
+/* Unordered list styling */
+ul {
+  /* no bullet points */
+  list-style-type: none;
+  /* no margin */
+  margin: 0;
+  /* padding on the left */
+  padding-left: 10px;
+  /* hide overflow so that contents don't break out of defined elements */
+  overflow: hidden;
+}
+
+/* -----------------------------Header - navogation-mobile----------------------------- */
+
+@media only screen and (max-width: 375px) {
+/* this code hides the navigation items by setting the display property to "none" */
+.navigation {
+
+display:none;
+
+}
+
+
+
+.navigation_admin_page {
+
+display:none;
+
+}
+
+
+
+.navigation_title {
+
+display:none;
+
+}
+
+/* -----------------------------Header - navogation separator----------------------------- */
+
+.separator {
+
+color: #199319;
+
+font-size: 130%;
+
+
+}
+
+}
+
+/* Changes the style of unordered list (ul) and list items (li) - this changes the display for li to block, adds 8px padding around li, and floats li to left side*/
+li {
+  display: block;
+  padding: 8px;
+  float: left;
+}
+
+/* Changes color of a.one, a.two, a.three, and a.four */
+a.one {
+  color: #ffffff;
+}
+
+a.two {
+  color: #fefefe;
+}
+
+a.three {
+  color: #fefefe;
+}
+
+a.four {
+  color: #fefefe;
+}
+
+/* Removes the default style of an anchor link */
+a:link {
+  text-decoration: none;
+}
+
+/* Styles the anchor link when the mouse hovers over it */
+a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------vertical admin menu----------------------------- */
+
+/* setting the height and width of the vertical menu */
+.verticalmenu {
+  height: 100%;
+  width: 160px;
+}
+
+/* a fixed position for the vertical menu to stay */
+.verticalmenu {
+  position: fixed;
+}
+
+/* z-index is the order for stacking the objects, the higher it is, the higher it will be in the stack  */
+.verticalmenu {
+  z-index: 1;
+}
+
+/* setting the  top and left coordinates for the vertical menu */
+.verticalmenu { 
+  top: 0;
+  left: 0;
+}
+
+/* background color for the vertical menu */
+.verticalmenu { 
+  background-color: #eee;
+}
+
+/* adding additional top padding for the vertical menu */
+.verticalmenu { 
+  padding-top: 20px;
+}
+
+
+
+/* Changes the background-color of all anchor tags inside '.verticalmenu' class to #eee */
+.verticalmenu a {
+    background-color: #eee;
+   
+ /* Sets the font color of all anchor tags inside '.verticalmenu' class to black */
+    color: black; 
+    
+/* Tells the browser to display each anchor tag inside '.verticalmenu' class as a block */    
+    display: block;
+    
+/* Sets the padding of all anchor tags inside '.verticalmenu' class to 12px */
+    padding: 12px; 
+    
+/* Removes the default text decoration of all anchor tags inside '.verticalmenu' class */
+    text-decoration: none; 
+}
+
+ /* Sets the title for '.verticalmenu' with same with underline style and unclickable */
+.verticalmenu t {
+  	background-color: #eee;
+  	color: gray;
+  	display: block;
+  	padding: 12px;
+  	text-decoration: underline;
+}
+
+
+.verticalmenu a:hover {
+  	background-color: #ccc;
+}
+
+.verticalmenu a.active {
+  	background-color: #5ea35e;
+  	color: white;
+}
+
+.verticalmenu s {
+  	background-color: white;
+  	color: black;
+  	display: block;
+  	padding: 12px;
+  	text-decoration: none;
+}
+
+
+
+
+.verticalmenu s:hover {
+  	background-color: #ccc;
+}
+
+.verticalmenu s.active {
+  	background-color: #5ea35e;
+  	color: white;
+}
+
+@media only screen and (max-width: 375px) {
+
+/* hide verticalmenu */
+.verticalmenu { 
+display:none;
+}
+.verticalmenu a {
+display:none;
+}
+.verticalmenu a:hover {
+display:none;
+}
+.verticalmenu a.active {
+display:none;
+}
+
+/* -----------------------------drop down menu----------------------------- */
+/* this is to style the top .dropbtn class */
+.dropbtn {
+background-color: #5ea35e;
+color: white;
+padding: 12px;
+font-size: 30px;
+border: none;
+position: relative; top: 25px; left: 10px;
+border-radius: 25px;
+border: 2px solid #73AD21;
+}
+/* this is to style the dropdown class */
+.dropdown {
+
+position: relative; 
+display: inline-block;
+}
+/* this is to style the dropdown-content class */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+/* this is to style the dropdown-content admin title */
+.dropdown-content t {
+color: gray;
+padding: 12px 16px;
+text-decoration: underline;
+display: block;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+     
+
+}
+
+@media only screen and (min-width: 376px) {
+
+.dropbtn {display:none;}
+.dropdown{display:none;}
+.dropdown-content{display:none;}
+.dropdown-content a{display:none;}
+	
+}
+
+
+/* -----------------------------announcements----------------------------- */
+
+/* create a div class called "announcement" */
+.announcements {
+
+/* set the margin to 170px from the top of the page and the left & right to auto */
+margin: 170px auto; 
+
+/* Set the padding to 20px */
+padding: 20px;
+
+/* Set the padding on the left side to 20px */
+padding-left: 20px;
+
+/* Set the default font style to sans-serif */
+font-family: sans-serif;
+
+/* Set the width to 70% of the page */
+width: 70%; 
+
+/* Set background color to green */
+background-color: #5ea35e;
+
+/* Set color to white */
+color: white; 
+
+}
+
+
+
+/* -----------------------------announcements - label----------------------------- */
+
+
+.announcements_label {
+
+margin: 10px;
+padding-left: 20px;
+
+
+}
+
+/* -----------------------------announcements - input - attachment ----------------------------- */
+
+
+.announcements_attachment {
+
+
+
+
+}
+
+/* -----------------------------announcements - label - message----------------------------- */
+
+
+.announcements_label_message {
+
+margin: 10px;
+padding-left: 20px;
+position: relative; top: -110px; 
+
+}
+
+/* -----------------------------announcements - label - submit----------------------------- */
+
+
+.announcements_label_submit {
+
+margin: 10px;
+padding-left: 20px;
+
+}
+
+/* -----------------------------announcements - input----------------------------- */
+
+.announcements_input {
+position: absolute; left: 258px;
+width: 600px;
+}
+
+/* -----------------------------announcements - input-message----------------------------- */
+
+.announcements_input_message {
+position: relative; left: 0px;
+}
+
+/* -----------------------------announcements - mobile----------------------------- */
+
+@media only screen and (max-width: 375px) {
+.announcements {
+margin: 170px auto; 
+padding-left: 0px;
+padding: 0px; 
+text-align: center; 
+font-family: sans-serif;
+width: 100%; 
+white-space: pre-line;
+}
+
+
+.announcements_input {
+width: 90%;
+position: absolute; left: 10px;
+font-size: 200%;
+
+}
+
+
+.announcements_label {
+
+margin: 10px;
+padding-left: 20px;
+font-size: 200%;
+padding-top: 50px;
+
+
+}
+
+.announcements_input_message {
+width: 90%;
+font-size: 200%;
+}
+
+
+.announcements_label_message {
+
+margin: 10px;
+padding-left: 20px;
+position: relative; top: 30px; 
+font-size: 200%;
+padding-top: 50px;
+}
+
+.announcements_label_submit {
+
+margin: 20px;
+padding-left: 20px;
+
+font-size: 200%;
+padding-top: 10px;
+
+}
+
+.announcements_attachment {
+
+
+margin: 20px;
+padding-left: -10px;
+margin-left: 0px;
+font-size: 100%;
+padding-top: 10px;
+
+}
+
+}
+
+/* -----------------------------footer----------------------------- */
+
+/*create the footer element as well as set its padding and width*/ 
+.footer {
+
+
+padding: 0px;
+position: absolute; bottom: 0px;
+width: 100%;
+background-color: #5ea35e;
+
+
+}
+
+
+/* -----------------------------footer - font -----------------------------*/
+
+/*style the font within the footer for regular users*/ 
+.footer {
+  padding: 0px;
+  position: absolute; 
+  bottom: 0px;
+  width: 100%;
+  background-color: #5ea35e;
+}
+
+/* -----------------------------footer - font - admin-----------------------------*/
+
+
+/*add styling for font within footer for admin users */ 
+.footer_font_admin {
+
+margin-left: 170px;
+
+color: white;
+line-height: 0;
+
+background-color: #5ea35e;
+}
+
+/* -----------------------------footer - mobile----------------------------- */
+@media only screen and (max-width: 375px) {
+.footer {
+
+
+padding: 0px;
+
+position: absolute; bottom: -1320px;
+
+width: 100%;
+
+background-color: #5ea35e;
+
+}
+
+
+/* -----------------------------footer - font - admin - mobile-----------------------------*/
+
+.footer_font_admin {
+
+margin-left: 20px;
+
+color: white;
+line-height: 0;
+
+}
+
+.footer_font {
+
+margin-left: 20px;
+
+color: white;
+line-height: 0;
+
+
+}
+
+}
+
